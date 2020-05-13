@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/eurus/ctf-scripts/cutter'
+let g:netrw_dirhist_2='/etc/initramfs-tools/conf.d'
+let g:netrw_dirhist_3='/etc/apt/sources.list.d'
+let g:netrw_dirhist_4='/home/eurus/appledore'
+let g:netrw_dirhist_5='/home/eurus/.PyCharmEdu2019.3'
+let g:netrw_dirhist_6='/home/eurus/.PyCharmEdu2019.3/config/codestyles'
