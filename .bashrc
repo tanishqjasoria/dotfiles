@@ -71,7 +71,7 @@ function conda_prompt {
   fi
 }
 
-line_color=${bldred}
+line_color=${bldpur}
 name_color=${txtwht}
 host_color=${bldcyn}
 path_color=${txtgrn}
@@ -125,22 +125,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# >>> Ghidra >>
-export PATH=~/ghidra/:$PATH
-# <<<
 
-# >>> Matlab 2019b >>
-alias matlab2019='/usr/local/MATLAB/R2019b/bin/matlab'
-# <<<
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
 
-# >>> securesystemslib test >>>
-export PYKCSLIB='/usr/lib/x86_64-linux-gnu/opensc-pkcs11.so'
-# <<<
-
-# >>> CTF tools environment >>>
-export CTF_TOOLS='/home/eurus/sherSHlocked/tools/ctf/bin/activate'
-export CTF_TOOLS3='/home/eurus/sherSHlocked/tools/ctf3/bin/activate'
-# <<<
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+source $HOME/.cargo/env
