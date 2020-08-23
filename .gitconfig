@@ -1,8 +1,7 @@
 [credential]
-  #helper = cache --timeout=3600
+  helper = cache --timeout=3600
 [user]
-	name = Tanishq Jasoria
+  name = Tanishq Jasoria
   email = jasoriatanishq@gmail.com
-  # email = tanishq@newzera.com
 [core]
-	editor = vim
+  editor = vim
