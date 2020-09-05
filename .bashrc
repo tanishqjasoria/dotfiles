@@ -130,4 +130,6 @@ unset __conda_setup
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
 
-source $HOME/.cargo/env
+if [ -f $HOME/.cargo/env ]; then 
+	source $HOME/.cargo/env
+fi
