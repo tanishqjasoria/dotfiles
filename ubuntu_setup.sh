@@ -28,9 +28,9 @@ echo "[]Installing]: Rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 sudo snap refresh
-sudo snap install slack
-sudo snap install pycharm-professional
-sudo snap install intellij-idea-ultimate
-sudo snap install clion
-sudo snap install webstorm
+sudo snap install slack --classic
+sudo snap install pycharm-professional --classic
+sudo snap install intellij-idea-ultimate --classic
+sudo snap install clion --classic
+sudo snap install webstorm --classic
 
