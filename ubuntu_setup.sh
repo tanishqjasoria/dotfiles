@@ -1,6 +1,6 @@
 sudo apt update
 sudo apt -y upgrade
-sudo apt install -y vim git gcc code nvim 
+sudo apt install -y git gcc code neovim 
 
 sudo apt install -y resolvconf
 sudo systemctl start resolvconf.service
