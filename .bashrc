@@ -112,14 +112,14 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/eurus/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/sherlock/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/eurus/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/eurus/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/sherlock/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sherlock/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/eurus/anaconda3/bin:$PATH"
+        export PATH="/home/sherlock/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -135,3 +135,6 @@ if [ -f $HOME/.cargo/env ]; then
 fi
 
 alias prime-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only"
+. "$HOME/.cargo/env"
+export PATH=$PATH:/usr/local/go/bin
+
