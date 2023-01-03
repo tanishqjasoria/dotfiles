@@ -125,6 +125,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+source $HOME/.secrets
+
 
 # tabtab source for packages
 # uninstall by removing these lines

@@ -1,6 +1,8 @@
 #!/bin/bash
 dotfilesDir=$(pwd)
 
+touch "${HOME}/.secrets"
+
 function linkDotfile {
   dest="${HOME}/${1}"
   dateStr=$(date +%Y-%m-%d-%H%M)
@@ -29,3 +31,5 @@ linkDotfile .vim
 linkDotfile .vimrc
 linkDotfile .bashrc
 linkDotfile .gitconfig
+linkDotfile .secrets
+
